@@ -3231,7 +3231,7 @@ wxString class
 
 This is the string class used in the wxWindows project.  A description of
 wxString can be found here:
-http://www.wxwindows.org/manuals/2.4.2/wx368.htm#wxstring
+https://wiki.wxwidgets.org/WxString
 
 This C++ library is similar to CBString.  However, it is littered with
 trivial functions (IsAscii, UpperCase, RemoveLast etc.)
@@ -3396,7 +3396,7 @@ The goals of libclc and Bstrlib are clearly quite different.
 fireString
 ----------
 
-http://firestuff.org/
+ftp://ftp.irisa.fr/pub/mirrors/gnu/www.gnu.org/directory/all/FireString.html
 
 1. Uses standard char * buffer, and adopts C 99's usage of "restrict" to pass
    the responsibility to guard against aliasing to the programmer.
@@ -3413,7 +3413,7 @@ Safe C String Library
 
 A library written for the purpose of increasing safety and power to C's string
 handling capabilities.
-http://www.zork.org/safestr/safestr.html
+https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=5111861
 
 1. While the safestr_* functions are safe in of themselves, interoperating
    with char * string has dangerous unsafe modes of operation.
@@ -3460,6 +3460,7 @@ modified and yet where a fixed sized buffer is undesirable.)
 Libsrt
 ------
 
+https://github.com/faragon/libsrt
 This is a length based string library based on a slightly different strategy.
 The string contents are appended to the end of the header directly so strings
 only require a single allocation.  However, whenever a reallocation occurs,
@@ -3477,7 +3478,8 @@ dedicate an expert to learn the internals of the library).
 SDS
 ---
 
-Sds uses a strategy very similar to Libsrt.  However, it uses some dynamic
+https://github.com/antirez/sds
+SDS uses a strategy very similar to Libsrt.  However, it uses some dynamic
 headers to decrease the overhead for very small strings.  This requires an
 extra switch statement for access to each string attribute.  The source code
 appears to use gcc/clang extensions, and thus it is not portable.
